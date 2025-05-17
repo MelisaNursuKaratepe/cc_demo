@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
 class GetCvInfo extends StatefulWidget {
-  const GetCvInfo({Key? key}) : super(key: key);
+  const GetCvInfo({super.key});
 
   @override
   State<GetCvInfo> createState() => _GetCvInfoState();
@@ -90,7 +90,7 @@ class _GetCvInfoState extends State<GetCvInfo> {
     //*********************************************************************************
   }
 
-  bool _GetCvInfoIsChecked = false;
+  final bool _GetCvInfoIsChecked = false;
 
   @override
   Widget build(BuildContext context) {
@@ -259,7 +259,7 @@ class _GetCvInfoState extends State<GetCvInfo> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 75,
                       )
                     ],

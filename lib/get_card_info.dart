@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
 class GetCardInfo extends StatefulWidget {
-  const GetCardInfo({Key? key}) : super(key: key);
+  const GetCardInfo({super.key});
 
   @override
   State<GetCardInfo> createState() => _GetCardInfoState();
@@ -90,7 +90,7 @@ class _GetCardInfoState extends State<GetCardInfo> {
     //*********************************************************************************
   }
 
-  bool _GetCardInfoIsChecked = false;
+  final bool _GetCardInfoIsChecked = false;
 
   @override
   Widget build(BuildContext context) {
@@ -106,7 +106,7 @@ class _GetCardInfoState extends State<GetCardInfo> {
                 child: Padding(
                   padding: const EdgeInsets.all(18.0),
                   child: Column(
-                    children: [SizedBox(height: 50,),
+                    children: [const SizedBox(height: 50,),
                       ClipRect(
                         child: BackdropFilter(
                           filter:
@@ -259,7 +259,7 @@ class _GetCardInfoState extends State<GetCardInfo> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 75,
                       )
                     ],

@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 class ForgotPassword extends StatefulWidget {
-  const ForgotPassword({Key? key}) : super(key: key);
+  const ForgotPassword({super.key});
 
   @override
   _ForgotPasswordState createState() => _ForgotPasswordState();
@@ -13,7 +13,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
   final _emailController = TextEditingController();
 
   bool _loading = false;
-  bool _success = false;
+  final bool _success = false;
 
   @override
   Widget build(BuildContext context) {

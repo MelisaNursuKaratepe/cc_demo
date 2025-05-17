@@ -5,8 +5,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class KaydolTasarim extends StatelessWidget {
   const KaydolTasarim({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
   @override
   Widget build(BuildContext context) {
     return Scaffold(

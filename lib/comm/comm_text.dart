@@ -3,13 +3,12 @@ import 'dart:ui' as ui;
 
 class CommTextFromField extends StatelessWidget {
   CommTextFromField(
-      {Key? key,
+      {super.key,
         required this.controller,
       required this.hintText,
       required this.icon,
       required this.inputType,
-        this.isEnable = true})
-      : super(key: key);
+        this.isEnable = true});
 
   final TextEditingController controller;
   final String hintText;

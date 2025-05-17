@@ -5,8 +5,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class GirisTasarim extends StatelessWidget {
   const GirisTasarim({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,29 +17,29 @@ class GirisTasarim extends StatelessWidget {
             Pin(size: 52.0, end: 44.0),
             Pin(size: 53.0, middle: 0.6382),
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
               ),
             ),
           ),
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
             ),
-            margin: EdgeInsets.fromLTRB(0.0, 2.0, 1.0, 0.0),
+            margin: const EdgeInsets.fromLTRB(0.0, 2.0, 1.0, 0.0),
           ),
           Pinned.fromPins(
             Pin(size: 138.0, middle: 0.4589),
             Pin(size: 178.0, start: 103.0),
             child: Transform.rotate(
               angle: 0.0,
-              child: Text.rich(
+              child: const Text.rich(
                 TextSpan(
                   style: TextStyle(
                     fontFamily: 'Roboto',
                     fontSize: 135,
-                    color: const Color(0xffffffff),
+                    color: Color(0xffffffff),
                     shadows: [
                       Shadow(
-                        color: const Color(0x29000000),
+                        color: Color(0x29000000),
                         offset: Offset(0, 7),
                         blurRadius: 6,
                       )
@@ -63,7 +63,7 @@ class GirisTasarim extends StatelessWidget {
               ),
             ),
           ),
-          Align(
+          const Align(
             alignment: Alignment(-0.428, -0.211),
             child: SizedBox(
               width: 61.0,
@@ -73,13 +73,13 @@ class GirisTasarim extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'Roboto',
                   fontSize: 18,
-                  color: const Color(0xffffffff),
+                  color: Color(0xffffffff),
                 ),
                 softWrap: false,
               ),
             ),
           ),
-          Align(
+          const Align(
             alignment: Alignment(0.423, -0.211),
             child: SizedBox(
               width: 61.0,
@@ -89,7 +89,7 @@ class GirisTasarim extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'Roboto',
                   fontSize: 18,
-                  color: const Color(0xffffffff),
+                  color: Color(0xffffffff),
                 ),
                 softWrap: false,
               ),
@@ -141,7 +141,7 @@ class GirisTasarim extends StatelessWidget {
               ),
             ),
           ),
-          Align(
+          const Align(
             alignment: Alignment(-0.047, -0.028),
             child: SizedBox(
               width: 130.0,
@@ -151,7 +151,7 @@ class GirisTasarim extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'Roboto',
                   fontSize: 28,
-                  color: const Color(0xffffffff),
+                  color: Color(0xffffffff),
                 ),
                 softWrap: false,
               ),
@@ -160,12 +160,12 @@ class GirisTasarim extends StatelessWidget {
           Pinned.fromPins(
             Pin(size: 157.0, start: 62.0),
             Pin(size: 23.0, middle: 0.5611),
-            child: Text(
+            child: const Text(
               'E-posta veya Telefon',
               style: TextStyle(
                 fontFamily: 'Roboto',
                 fontSize: 17,
-                color: const Color(0x75ffffff),
+                color: Color(0x75ffffff),
               ),
               softWrap: false,
             ),
@@ -173,12 +173,12 @@ class GirisTasarim extends StatelessWidget {
           Pinned.fromPins(
             Pin(size: 35.0, start: 59.0),
             Pin(size: 23.0, middle: 0.6348),
-            child: Text(
+            child: const Text(
               'Şifre',
               style: TextStyle(
                 fontFamily: 'Roboto',
                 fontSize: 17,
-                color: const Color(0x75ffffff),
+                color: Color(0x75ffffff),
               ),
               softWrap: false,
             ),
@@ -187,7 +187,7 @@ class GirisTasarim extends StatelessWidget {
             Pin(size: 52.0, end: 60.0),
             Pin(size: 53.0, middle: 0.6405),
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
 
               ),
             ),
@@ -202,7 +202,7 @@ class GirisTasarim extends StatelessWidget {
               ),
             ),
           ),
-          Align(
+          const Align(
             alignment: Alignment(-0.622, 0.372),
             child: SizedBox(
               width: 70.0,
@@ -212,7 +212,7 @@ class GirisTasarim extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'Roboto',
                   fontSize: 14,
-                  color: const Color(0xfff6eeee),
+                  color: Color(0xfff6eeee),
                 ),
                 softWrap: false,
               ),
@@ -221,12 +221,12 @@ class GirisTasarim extends StatelessWidget {
           Pinned.fromPins(
             Pin(size: 102.0, end: 55.0),
             Pin(size: 19.0, middle: 0.6862),
-            child: Text(
+            child: const Text(
               'Şifremi Unuttum',
               style: TextStyle(
                 fontFamily: 'Roboto',
                 fontSize: 14,
-                color: const Color(0xe0f1f1f1),
+                color: Color(0xe0f1f1f1),
               ),
               softWrap: false,
             ),
@@ -236,16 +236,16 @@ class GirisTasarim extends StatelessWidget {
             Pin(size: 43.0, middle: 0.8065),
             child: Container(
               decoration: BoxDecoration(
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
                   begin: Alignment(-0.654, 0.0),
                   end: Alignment(0.74, 0.0),
-                  colors: [const Color(0xfff1f1f1), const Color(0xffb69feb)],
+                  colors: [Color(0xfff1f1f1), Color(0xffb69feb)],
                   stops: [0.0, 1.0],
                 ),
                 borderRadius: BorderRadius.circular(9.0),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
-                    color: const Color(0x29000000),
+                    color: Color(0x29000000),
                     offset: Offset(0, 7),
                     blurRadius: 6,
                   ),
@@ -253,7 +253,7 @@ class GirisTasarim extends StatelessWidget {
               ),
             ),
           ),
-          Align(
+          const Align(
             alignment: Alignment(-0.077, 0.604),
             child: SizedBox(
               width: 118.0,
@@ -263,7 +263,7 @@ class GirisTasarim extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'Helvetica',
                   fontSize: 20,
-                  color: const Color(0xff362840),
+                  color: Color(0xff362840),
                   fontWeight: FontWeight.w700,
                 ),
                 softWrap: false,
@@ -282,12 +282,12 @@ class GirisTasarim extends StatelessWidget {
           Pinned.fromPins(
             Pin(size: 147.0, start: 36.0),
             Pin(size: 19.0, end: 141.0),
-            child: Text(
+            child: const Text(
               'Henüz hesabın yok mu?',
               style: TextStyle(
                 fontFamily: 'Roboto',
                 fontSize: 14,
-                color: const Color(0xfff6eeee),
+                color: Color(0xfff6eeee),
               ),
               softWrap: false,
             ),
@@ -295,12 +295,12 @@ class GirisTasarim extends StatelessWidget {
           Pinned.fromPins(
             Pin(size: 89.0, end: 41.0),
             Pin(size: 19.0, end: 138.0),
-            child: Text(
+            child: const Text(
               'Hesap Oluştur',
               style: TextStyle(
                 fontFamily: 'Roboto',
                 fontSize: 14,
-                color: const Color(0xffb69feb),
+                color: Color(0xffb69feb),
               ),
               softWrap: false,
             ),

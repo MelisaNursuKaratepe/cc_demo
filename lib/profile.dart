@@ -115,43 +115,43 @@ class _ProfileState extends State<Profile> {
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Container(
-            margin: EdgeInsets.only(top: 20.0),
+            margin: const EdgeInsets.only(top: 20.0),
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(height: 20.0),
-                  CommTitle(text: "Profil", color: Colors.black),
-                  SizedBox(height: 50.0),
+                  const SizedBox(height: 20.0),
+                  const CommTitle(text: "Profil", color: Colors.black),
+                  const SizedBox(height: 50.0),
                   CommTextFromField(
                       controller: _conUsername,
                       isEnable: false,
                       icon: Icons.person,
                       inputType: TextInputType.name,
                       hintText: 'Kullanıcı Adı'),
-                  SizedBox(height: 10.0),
+                  const SizedBox(height: 10.0),
                   CommTextFromField(
                     controller: _conEmail,
                     icon: Icons.email,
                     inputType: TextInputType.emailAddress,
                     hintText: 'Email',
                   ),
-                  SizedBox(height: 10.0),
+                  const SizedBox(height: 10.0),
                   CommTextFromField(
                     controller: _conPhone,
                     icon: Icons.phone,
                     inputType: TextInputType.phone,
                     hintText: 'Telefon Numarası',
                   ),
-                  SizedBox(height: 10.0),
+                  const SizedBox(height: 10.0),
                   CommPassword(
                     controller: _conPassword,
                     icon: Icons.lock,
                     hintText: 'Şifre',
                   ),
-                  SizedBox(height: 10.0),
+                  const SizedBox(height: 10.0),
                   Container(
-                    margin: EdgeInsets.all(30.0),
+                    margin: const EdgeInsets.all(30.0),
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.black,
@@ -159,7 +159,7 @@ class _ProfileState extends State<Profile> {
                     ),
                     child: TextButton(
                       onPressed: update,
-                      child: Text(
+                      child: const Text(
                         'Değişiklikleri Kaydet',
                         style: TextStyle(color: Colors.white),
                       ),
@@ -172,9 +172,9 @@ class _ProfileState extends State<Profile> {
                     hintText: 'Kullanıcı Adı',
                     inputType: TextInputType.text,
                   ),
-                  SizedBox(height: 10.0),
+                  const SizedBox(height: 10.0),
                   Container(
-                    margin: EdgeInsets.all(30.0),
+                    margin: const EdgeInsets.all(30.0),
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.black,
@@ -182,7 +182,7 @@ class _ProfileState extends State<Profile> {
                     ),
                     child: TextButton(
                       onPressed: delete,
-                      child: Text(
+                      child: const Text(
                         'Hesabı Sil',
                         style: TextStyle(color: Colors.white),
                       ),

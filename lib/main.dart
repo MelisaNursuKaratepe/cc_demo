@@ -1,5 +1,3 @@
-import 'package:cc_demo/bottomnavbar_drawer.dart';
-import 'package:cc_demo/home_page.dart';
 import 'package:cc_demo/lang.dart';
 import 'package:cc_demo/login.dart';
 import 'package:flutter/material.dart';

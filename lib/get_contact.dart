@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
 class GetContact extends StatefulWidget {
-  const GetContact({Key? key}) : super(key: key);
+  const GetContact({super.key});
 
   @override
   State<GetContact> createState() => _GetContactState();
@@ -34,7 +34,7 @@ class _GetContactState extends State<GetContact> {
                             border: Border.all(
                                 width: 1.0, color: const Color(0x1fffffff)),
                           ),
-                          child: Column(children: const [
+                          child: const Column(children: [
                             SizedBox(height: 40),
     
                             CommTitle(

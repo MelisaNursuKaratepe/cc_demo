@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
 class CommPassword extends StatefulWidget {
-  CommPassword({
-    Key? key,
+  const CommPassword({
+    super.key,
     required this.controller,
     required this.hintText,
     required this.icon,
-  }) : super(key: key);
+  });
 
   final TextEditingController controller;
   final String hintText;

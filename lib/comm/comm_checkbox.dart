@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class CommCheckBox extends StatefulWidget {
   const CommCheckBox({
-    Key? key,
+    super.key,
     required this.text1,
     required this.text2,
     required this.text3,
-  }) : super(key: key);
+  });
 
   final String text1;
   final String text2;

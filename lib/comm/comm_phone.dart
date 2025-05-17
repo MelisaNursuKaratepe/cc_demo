@@ -6,9 +6,9 @@ import 'package:intl_phone_field/intl_phone_field.dart';
 
 class CommPhoneNumber extends StatelessWidget {
   const CommPhoneNumber({
-    Key? key,
+    super.key,
     required this.controller,
-  }) : super(key: key);
+  });
   final TextEditingController controller;
   @override
   Widget build(BuildContext context) {

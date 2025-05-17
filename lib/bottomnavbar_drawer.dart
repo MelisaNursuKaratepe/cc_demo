@@ -5,7 +5,7 @@ import 'package:cc_demo/get_card_info.dart';
 import 'package:flutter/material.dart';
 
 class MyBottomNavBar extends StatefulWidget {
-  const MyBottomNavBar({Key? key}) : super(key: key);
+  const MyBottomNavBar({super.key});
 
   @override
   State<MyBottomNavBar> createState() => _MyBottomNavBarState();

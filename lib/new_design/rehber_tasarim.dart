@@ -4,8 +4,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class RehberTasarim extends StatelessWidget {
   const RehberTasarim({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
   @override
   Widget build(BuildContext context) {
     return Scaffold(

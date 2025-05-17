@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 
 class CommRow extends StatelessWidget {
   const CommRow(
-      {Key? key,
+      {super.key,
       required this.text1,
       required this.text2,
-      required this.onPressed})
-      : super(key: key);
+      required this.onPressed});
 
   final String text1;
   final String text2;

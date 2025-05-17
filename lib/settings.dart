@@ -2,7 +2,7 @@ import 'package:cc_demo/comm/comm_title.dart';
 import 'package:flutter/material.dart';
 
 class Settings extends StatefulWidget {
-  const Settings({Key? key}) : super(key: key);
+  const Settings({super.key});
 
   @override
   State<Settings> createState() => _SettingsState();
@@ -18,11 +18,11 @@ class _SettingsState extends State<Settings> {
       body: Center(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            CommTitle(text: "Ayarlar", color: Colors.black),
-            SizedBox(
+            const CommTitle(text: "Ayarlar", color: Colors.black),
+            const SizedBox(
               height: 50,
             ),
             SwitchListTile(
